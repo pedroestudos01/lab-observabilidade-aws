@@ -1,0 +1,8 @@
+# Ignorar ambientes virtuais do Python
+venv/
+__pycache__/
+
+# Ignorar chaves e variaveis de ambiente
+.env
+credentials.json
+.aws/
