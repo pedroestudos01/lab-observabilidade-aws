@@ -1,9 +1,10 @@
 from flask import Flask, jsonify
+from flask_cors import CORS  # <-- NOVA LINHA AQUI
 import time
 import math
 
 app = Flask(__name__)
-
+CORS(app) # <-- NOVA LINHA AQUI (Isso libera a alfândega para o S3!)
 # Rota 1: Tudo certo (Para gerar logs de sucesso - 200 OK)
 @app.route('/')
 def home():
